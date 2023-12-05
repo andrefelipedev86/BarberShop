@@ -4,6 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600&display=swap" rel="stylesheet" />
@@ -12,6 +14,8 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
   <title>BarberShop</title>
 </head>
 
@@ -20,7 +24,7 @@
   <div class="bg-home">
     <header>
       <nav class="header-content container">
-        <div class="header-icons">
+        <div class="header-icons" data-aos="fade-down">
           <a href="#">
             <i class="fa-brands fa-instagram fa-2x"></i>
           </a>
@@ -32,28 +36,30 @@
           </a>
         </div>
 
-        <div class="header-logo">
-          <img src="assets/logo.svg" alt="Logo da barbearia">
+        <div class="header-logo"data-aos="fade-up" data-aos-delay="300">
+          <img data-aos="flip-up" data-aos-delay="300" data-aos-duration="1500" src="assets/logo.svg" alt="Logo da barbearia">
         </div>
 
-        <div>
-          <a class="header-button" href="#">
+        <div data-aos="fade-down">
+          <a class="header-button" href="https://api.whatsapp.com/send/?phone=5585997254252&text=Quero%20fazer%20um%20agendamento" target="_blank">
             Agendar horário
           </a>
         </div>
       </nav>
 
-      <main class="hero container">
+      <main class="hero container" data-aos="fade-up" data-aos-delay="400">
         <h1>ESTILO É UM REFLEXO DA SUA ATITUDE E PERSONALIDADE.</h1>
       <p>Horário de funcionamento: 09:00 às 19:00</p>
-      <a href="#" class="button-contact" target="_blank">
+      <a href="https://api.whatsapp.com/send/?phone=5585997254252&text=Quero%20fazer%20um%20agendamento" class="button-contact" target="_blank">
         Agendar horário
       </a>
       </main>
     </header>    
   </div>
 
-  <section class="about">
+  <!-- ABOUT -->
+
+  <section class="about" data-aos="zoom-in" data-aos-delay="100">
     <div class="container about-content">
       <div>
         <img 
@@ -61,7 +67,7 @@
         alt="Imagem sobre a barbearia">
       </div>
 
-      <div class="about-description">
+      <div class="about-description" data-aos="zoom-out-left" data-aos-delay="250">
           <h2>Sobre</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, beatae cupiditate. Nisi, corporis natus laborum voluptatem quasi possimus, harum impedit, iste architecto aliquam maxime dolores laudantium reiciendis dolor eaque amet?</p>
           <p>Horário de funcionamento: <strong>09:00</strong> às <strong>19:00</strong> </p>
@@ -70,6 +76,81 @@
 
   </section>
 
-</body>
+  <section class="services">
+    <div class=" services-content container">
+      <h2>Serviços</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus necessitatibus, unde assumenda ratione dolorem blanditiis veniam culpa iusto praesentium rerum est nesciunt deleniti, quasi, nemo molestiae possimus. Excepturi, voluptatum vitae?</p>
+    </div>
+    <section class="haircuts">
+      <div class="haircut" data-aos="fade-up" data-aos-delay="150">
+        <img src="assets/corte1.png" alt="corte normal">
+        <div class="haircut-info">
+          <strong>Corte normal</strong>
+          <button>
+            R$ 45,00
+          </button>
+        </div>
+      </div>
 
+      <div class="haircut"  data-aos="fade-up" data-aos-delay="250">
+        <img src="assets/corte2.png" alt="Barba completa">
+        <div class="haircut-info">
+          <strong>Barba completa</strong>
+          <button>
+            R$ 35,00
+          </button>
+        </div>
+      </div>
+
+      <div class="haircut"  data-aos="fade-up" data-aos-delay="400">
+        <img src="assets/corte3.png" alt="corte e barba">
+        <div class="haircut-info">
+          <strong>Corte e Barba</strong>
+          <button>
+            R$ 80,00
+          </button>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <!-- FOOTER -->
+
+  <div class="services">
+    <h2>Venha conhecer</h2>
+  </div>
+
+  <iframe 
+  width="100%"
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.312931202963!2d-38.47280148870872!3d-3.7418411432264826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c74631f2768a13%3A0xcfe3f384b9308e03!2sShopping%20RioMar%20Fortaleza!5e0!3m2!1spt-BR!2sbr!4v1701744612272!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+  <footer class="footer">
+    <div class="footer-icons">
+      <a href="#">
+        <i class="fa-brands fa-instagram fa-2x"></i>
+      </a>
+      <a href="#">
+        <i class="fa-brands fa-facebook fa-2x"></i>
+      </a>
+      <a href="#">
+        <i class="fa-brands fa-tiktok fa-2x"></i>
+      </a>
+    </div>
+
+    <div>
+      <img src="assets/logo.svg" alt="logo barbearia">
+    </div>
+
+    <p>Copyright 2023 | André Felipe Dev - Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- Button Whatsapp -->
+
+<a href="https://api.whatsapp.com/send/?phone=5585997254252&text=Quero%20fazer%20um%20agendamento" class="btn-whatsapp" target="_blank" data-aos="zoom-in-up" data-aos-delay="400">
+  <img src="assets/whatssapp.svg" alt="Botao whatsapp">
+  <span class="tooltip-text">Agende seu horário</span>
+</a>
+
+<script src="script.js"></script>
+</body>
 </html>
